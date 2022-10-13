@@ -1,0 +1,39 @@
+From bdb39fc2b431aeb7a59fe2c77eeffe8f6a9c2151 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Sat, 29 Apr 2017 11:34:07 +0200
+Subject: Use node assert instead of tiny (spurious) package
+
+Avoid to use an useless package
+
+Forwarded: no
+---
+ lib/hmac-drbg.js | 2 +-
+ package.json     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/lib/hmac-drbg.js b/lib/hmac-drbg.js
+index 9051a52..924144c 100644
+--- a/lib/hmac-drbg.js
++++ b/lib/hmac-drbg.js
+@@ -2,7 +2,7 @@
+ 
+ var hash = require('hash.js');
+ var utils = require('minimalistic-crypto-utils');
+-var assert = require('minimalistic-assert');
++var assert = require('assert');
+ 
+ function HmacDRBG(options) {
+   if (!(this instanceof HmacDRBG))
+diff --git a/package.json b/package.json
+index b95d391..3b27c0b 100644
+--- a/package.json
++++ b/package.json
+@@ -26,7 +26,7 @@
+   },
+   "dependencies": {
+     "hash.js": "^1.0.3",
+-    "minimalistic-assert": "^1.0.0",
++    "assert": "^1.0.0",
+     "minimalistic-crypto-utils": "^1.0.1"
+   }
+ }

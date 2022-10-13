@@ -1,0 +1,5 @@
+Tests: require
+Depends: node-hmac-drbg, nodejs (>= 6)
+
+Tests: runtestsuite
+Depends: node-hmac-drbg, mocha (>= 1.20)

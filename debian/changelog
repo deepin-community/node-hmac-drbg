@@ -1,0 +1,36 @@
+node-hmac-drbg (1.0.1-4) unstable; urgency=medium
+
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-assert, node-hash.js,
+      node-minimalistic-crypto-utils and nodejs.
+    + node-hmac-drbg: Drop versioned constraint on node-assert, node-hash.js,
+      node-minimalistic-crypto-utils and nodejs in Depends.
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Repository.
+  * Update standards version to 4.5.1, no changes needed.
+  * Set upstream metadata fields: Repository-Browse.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 28 Aug 2021 23:54:06 +0100
+
+node-hmac-drbg (1.0.1-3) unstable; urgency=medium
+
+  * Move to /usr/share
+  * Bump debhelper and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 16 Sep 2019 12:04:19 +0200
+
+node-hmac-drbg (1.0.1-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat (no changes)
+  * Section is now javascript
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 19 May 2018 23:10:10 +0200
+
+node-hmac-drbg (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #861401)
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 29 Apr 2017 11:53:28 +0200
